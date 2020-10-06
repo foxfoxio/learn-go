@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	".."
+	"github.com/foxfoxio/learn-go/0001-http-google-cloud-functions-in-go/functions"
 )
 
 func main() {

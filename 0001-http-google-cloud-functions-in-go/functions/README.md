@@ -249,7 +249,7 @@ ___note:-__ skip this section, if `gcloud` Google Cloud SDK has already been ins
       "net/http"
       "os"
 
-      ".."
+      "github.com/foxfoxio/learn-go/0001-http-google-cloud-functions-in-go/functions"
     )
 
     func main() {
@@ -270,7 +270,7 @@ ___note:-__ skip this section, if `gcloud` Google Cloud SDK has already been ins
 1. start local server
 
     ```bash
-    make run-main
+    make run-local
     # or
     go run cmd/main.go
     ```
