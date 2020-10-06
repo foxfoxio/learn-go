@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestHellpGopher(t *testing.T) {
+func TestHelloGopher(t *testing.T) {
 	rr := httptest.NewRecorder()
 	req := httptest.NewRequest("GET", "/", nil)
 	HelloGopher(rr, req)

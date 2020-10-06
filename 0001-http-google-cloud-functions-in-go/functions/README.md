@@ -2,7 +2,7 @@
 
 ## Prerequisite
 
-___note:-__ skip this section, if `gcloud` Google Cloud SDK has already been installed and setup
+__note:-__ skip this section, if `gcloud` Google Cloud SDK has already been installed and setup
 
 1. install gcloud sdk, see [instructions](https://cloud.google.com/sdk/docs/install)
 
@@ -47,7 +47,7 @@ ___note:-__ skip this section, if `gcloud` Google Cloud SDK has already been ins
       └── hello_test.go  # test file for HelloGopher function
     ```
 
-## HelloGopher function
+## Ex1: HelloGopher function
 
 1. create a function `HelloGopher` file `hello.go`
 
@@ -93,7 +93,7 @@ ___note:-__ skip this section, if `gcloud` Google Cloud SDK has already been ins
    curl https://region-my-project.cloudfunctions.net/HelloGopher
    ```
 
-## Gopher function
+## Ex2: Gopher function
 
 ![gopher](./gopher.png)
 
@@ -164,7 +164,7 @@ ___note:-__ skip this section, if `gcloud` Google Cloud SDK has already been ins
    curl https://region-my-project.cloudfunctions.net/Gopher
    ```
 
-## test HelloGopher
+## Ex3: test HelloGopher
 
 1. create a `TestHelloGopher` in file `hello_test.go`
 
@@ -180,7 +180,7 @@ ___note:-__ skip this section, if `gcloud` Google Cloud SDK has already been ins
       "github.com/stretchr/testify/assert"
     )
 
-    func TestHellpGopher(t *testing.T) {
+    func TestHelloGopher(t *testing.T) {
       rr := httptest.NewRecorder()
       req := httptest.NewRequest("GET", "/", nil)
       HelloGopher(rr, req)
@@ -201,7 +201,7 @@ ___note:-__ skip this section, if `gcloud` Google Cloud SDK has already been ins
     go test
     ```
 
-## test Gopher
+## Ex4: test Gopher
 
 1. create a `TestGopher` in file `gopher_test.go`
 
@@ -237,9 +237,9 @@ ___note:-__ skip this section, if `gcloud` Google Cloud SDK has already been ins
     go test
     ```
 
-## run locally
+## Ex5: run locally
 
-1. create a `main` function in `cmd/main.go
+1. create a `main` function in `cmd/main.go`
 
     ```golang
     package main
