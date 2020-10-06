@@ -1,4 +1,4 @@
-# cloud functions in go
+# 0001-http-google-cloud-functions-in-go
 
 ## Prerequisite
 
