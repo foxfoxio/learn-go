@@ -149,7 +149,7 @@ __note:-__ skip this section, if `gcloud` Google Cloud SDK has already been inst
         --trigger-http \
         --allow-unauthenticated
     # for windows
-    gcloud functions deploy HelloGopher --region asia-northeast1 --runtime go111 --trigger-http --allow-unauthenticated
+    gcloud functions deploy Gopher --region asia-northeast1 --runtime go111 --trigger-http --allow-unauthenticated
     ```
 
 1. review result
